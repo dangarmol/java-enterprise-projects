@@ -15,8 +15,7 @@ public class TransactionManagerImp extends TransactionManager
 	{
 		if (!concurrentHashMap.contains(Thread.currentThread())) 
 		{
-			this.concurrentHashMap.put(Thread.currentThread(),
-					TransactionFactory.getInstance().crearTransaccion());
+			this.concurrentHashMap.put(Thread.currentThread(), TransactionFactory.getInstance().crearTransaccion());
 			return true;
 		}
 		return false;

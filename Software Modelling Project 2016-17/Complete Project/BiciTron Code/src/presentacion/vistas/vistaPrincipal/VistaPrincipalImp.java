@@ -21,7 +21,7 @@ public class VistaPrincipalImp extends VistaPrincipal
 	@Override
 	public void update(Contexto contexto) 
 	{
-		switch (contexto.getEvent()) 
+		switch (contexto.getEvent())
 		{
 			case ListaComandos.VENTANAPRINCIPAL:
 				principal.setVisible(true);

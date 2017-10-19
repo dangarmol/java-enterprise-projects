@@ -19,7 +19,7 @@ public class ServicioAplicacionBicicletaImp implements ServicioAplicacionBicicle
 		TransactionManager.getInstance().getTransaccion().start();
 		TransferBicicleta tb = FactoriaDAO.getInstance().createDAOBicicleta().search(t);
 
-		if (tb == null) 
+		if (tb == null)
 		{
 			id = FactoriaDAO.getInstance().createDAOBicicleta().add(t);
 			if (id == 0)
@@ -137,7 +137,7 @@ public class ServicioAplicacionBicicletaImp implements ServicioAplicacionBicicle
 	}
 
 	@Override
-	public int numeroBicicletas(PareadoQuery pQuery) 
+	public int numeroBicicletas(PareadoQuery pQuery)
 	{
 		TransactionManager.getInstance().nuevaTransaccion();
 		TransactionManager.getInstance().getTransaccion().start();

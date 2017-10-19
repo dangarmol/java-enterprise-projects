@@ -23,7 +23,7 @@ import javax.persistence.Version;
 		@NamedQuery(name = "negocio.entidadesJPA.Empleado.findBytelefono", query = "select obj from Empleado obj where obj.telefono = :telefono"),
 		@NamedQuery(name = "negocio.entidadesJPA.Empleado.findByactivo", query = "select obj from Empleado obj where obj.activo = :activo"),
 		@NamedQuery(name = "negocio.entidadesJPA.Empleado.findBydepartamento", query = "select obj from Empleado obj where obj.departamento = :departamento"),
-		@NamedQuery(name="negocio.entidadesJPA.Empleado.findBydepartamentoActivo", query="select obj from Empleado obj where obj.departamento = :departamento AND obj.activo = :activo"),
+		@NamedQuery(name = "negocio.entidadesJPA.Empleado.findBydepartamentoActivo", query = "select obj from Empleado obj where obj.departamento = :departamento AND obj.activo = :activo"),
 		@NamedQuery(name = "negocio.entidadesJPA.Empleado.findBysueldo", query = "select obj from Empleado obj where obj.sueldo = :sueldo"),
 		@NamedQuery(name = "negocio.entidadesJPA.Empleado.findByversion", query = "select obj from Empleado obj where obj.version = :version") })
 public abstract class Empleado implements Serializable 

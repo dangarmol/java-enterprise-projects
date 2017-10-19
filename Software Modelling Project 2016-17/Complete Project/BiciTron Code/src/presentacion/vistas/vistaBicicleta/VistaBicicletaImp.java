@@ -16,8 +16,8 @@ import presentacion.vistas.vistaBicicleta.bicicleta.JFrameModificarBicicletaCarr
 import presentacion.vistas.vistaBicicleta.bicicleta.JFrameModificarBicicletaMontana;
 
 public class VistaBicicletaImp extends VistaBicicleta {
+	
 	private JFrameAltaBicicletaCarretera altaBicicletaCarretera;
-
 	private JFrameAltaBicicletaMontana altaBicicletaMontaña;
 	private JFrameBajaBicicleta bajaBicicleta;
 	private JFrameBotoneraBicicleta botoneraBicicleta;
